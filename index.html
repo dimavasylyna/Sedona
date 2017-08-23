@@ -4,7 +4,7 @@
 	<title>Sedona</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
 </head>
 <body>
 	<div class="container">
@@ -13,7 +13,7 @@
 		<header class="main-header">
 			<!-- Menu -->
 			<nav class="menu">
-				<ul>
+				<ul class="clearfix">
 					<li><a href="#">Информация</a></li>
 					<li><a href="#">Фото и видео</a></li>
 					<li><a href="#">Карта штата</a></li>
@@ -22,7 +22,7 @@
 			</nav>
 			<!-- logo -->
 			<div>
-				<a href="#" class="logo">
+				<a href="#" class="logo" >
 					<img src="img/logo.jpg" alt="">
 				</a>
 			</div>
@@ -48,19 +48,21 @@
 				</header>
 				<!--  1 -->
 				<div class="reason-1">
-					<h2>Настоящий <br>
-						городок</h2>
-					<div>— №1 —</div> 
-					<p>
-						Седона — не аттракцион для туристов, <br>
-						там течет своя жизнь
-					</p>
 					<img src="img/content-1.jpg" alt="">
+					<div class="reason-title">
+						<h2>Настоящий <br>
+							городок</h2>
+						<div>— №1 —</div> 
+						<p>
+							Седона — не аттракцион для туристов, <br>
+							там течет своя жизнь
+						</p>
+					</div>
 				</div>
 				<!--2 -->
-				<div class="reason-icon">
+				<div class="reason-icon clearfix">
 					<!-- Home-icon -->
-					<div class="reason-icon-home">
+					<div class="reason-icon-home icon-item">
 						<h2>Жилье</h2>
 						<p>
 							Рекомендуем пожить в настоящем <br>
@@ -68,15 +70,15 @@
 						</p>
 					</div>
 					<!-- Home-food -->
-					<div class="reason-icon-food">
+					<div class="reason-icon-food icon-item">
 						<h2>Еда</h2>
 						<p>
-							Всегда заказывайте фирменный бургер,<br>
+							Всегда заказывайте фирменный бургер, <br>
 							вы не разочаруетесь!
 						</p>
 					</div>
 					<!-- Home-gift -->
-					<div class="reason-icon-gift">
+					<div class="reason-icon-gift icon-item">
 						<h2>Сувениры</h2>
 						<p>
 							Не только китайского, <br>
@@ -85,7 +87,9 @@
 					</div>
 				</div>
 				<!--  3 -->
-				<div class="reason-2">
+				<div class="reason-2 clearfix">
+					<img src="img/content-2.jpg" alt="">
+					<div class="reason-title">
 					<h2>
 						Там есть <br>
 						мост дьявола
@@ -95,12 +99,12 @@
 						Да, по нему можно пройти! <br>
 						Если конечно вы осмелитесь
 					</p>
-					<img src="img/content-2.jpg" alt="">
+					</div>
 				</div>
 				<!-- 4 -->
-				<div class="reason-list">
+				<div class="reason-list clearfix">
 					<!-- Square-list -->
-					<div class="reason-list-square">
+					<div class="reason-list-square list-item">
 						<h2>
 							Небольшая <br>
 							площадь
@@ -112,7 +116,7 @@
 						</p>
 					</div>
 					<!-- Road-list -->
-					<div class="reason-list-road">
+					<div class="reason-list-road list-item">
 						<h2>
 							Красивая <br>
 							дорога
@@ -124,7 +128,7 @@
 						</p>
 					</div>
 					<!-- Tourist-list -->
-					<div class="reason-list-tourist">
+					<div class="reason-list-tourist list-item">
 						<h2>
 							Мало <br>
 							туристов
@@ -148,7 +152,7 @@
 			</div>
 			<!-- Map -->
 			<div class="map">
-				<img src="img/map.jpg" alt="map" width="1200px" height="473px">
+				<img src="img/map.jpg" alt="map" width="1200px" height="593px">
 			</div>
 			<!-- Search form -->
 			<div class="search-form">
@@ -171,13 +175,13 @@
 		</div>
 
 		<!-- FOOTER -->
-		<footer class="main-footer">
+		<footer class="main-footer clearfix">
 			<!-- visitsedona -->
-			<div class="visit-sedona">
+			<div class="visit-sedona footer-item">
 				<a href="#">Visitsedona</a>
 			</div>
 			<!-- social -->
-			<div class="social">
+			<div class="social footer-item">
 				<ul>
 					<li><a href="#">tw</a></li>
 					<li><a href="#">fb</a></li>
@@ -185,7 +189,7 @@
 				</ul>
 			</div>
 			<!-- HTML-Academy -->
-			<div class="academy">
+			<div class="academy footer-item">
 				<p>Visited by</p>
 				<a href="#"><img src="img/academy-logo.png" alt="HTML-Academy"></a>
 			</div>
