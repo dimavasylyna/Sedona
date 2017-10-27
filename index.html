@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
 	<title>Sedona</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style_flex.css" rel="stylesheet">
 </head>
 <body>
 	<div class="container">
@@ -13,7 +14,7 @@
 		<header class="main-header">
 			<!-- Menu -->
 			<nav class="menu">
-				<ul class="clearfix">
+				<ul>
 					<li><a href="#">Информация</a></li>
 					<li><a href="#">Фото и видео</a></li>
 					<li><a href="#">Карта штата</a></li>
@@ -21,10 +22,8 @@
 				</ul>
 			</nav>
 			<!-- logo -->
-			<div>
-				<a href="#" class="logo" >
-					<img src="img/logo.jpg" alt="">
-				</a>
+			<div class="logo">
+					<img src="img/logo.png" alt="">
 			</div>
 		</header>
 		
@@ -60,7 +59,7 @@
 					</div>
 				</div>
 				<!--2 -->
-				<div class="reason-icon clearfix">
+				<div class="reason-icon">
 					<!-- Home-icon -->
 					<div class="reason-icon-home icon-item">
 						<h2>Жилье</h2>
@@ -81,28 +80,27 @@
 					<div class="reason-icon-gift icon-item">
 						<h2>Сувениры</h2>
 						<p>
-							Не только китайского, <br>
-							но и местного производства!
+							Не только китайского, но и местного <br> производства!
 						</p>
 					</div>
 				</div>
 				<!--  3 -->
-				<div class="reason-2 clearfix">
+				<div class="reason-2 ">
 					<img src="img/content-2.jpg" alt="">
-					<div class="reason-title">
+					<div class="reason-title reason-title-2">
 					<h2>
 						Там есть <br>
 						мост дьявола
 					</h2>
 					<div>— №2 —</div> 
 					<p>
-						Да, по нему можно пройти! <br>
-						Если конечно вы осмелитесь
+						Да, по нему можно пройти! Если конечно <br>
+						 вы осмелитесь
 					</p>
 					</div>
 				</div>
 				<!-- 4 -->
-				<div class="reason-list clearfix">
+				<div class="reason-list ">
 					<!-- Square-list -->
 					<div class="reason-list-square list-item">
 						<h2>
@@ -156,42 +154,42 @@
 			</div>
 			<!-- Search form -->
 			<div class="search-form">
-				<h2>Поиск гостинницы в Седоне</h2>
+				<h2>Поиск гостиницы в Седоне</h2>
 				<!-- form -->
 				<form action="" method="post">
 					Дата заезда:
-					<input type="date" name="arrival">
+					<input type="date" name="arrival"> <br/>
 					Дата выезда:
-					<input type="date" name="departure">
+					<input type="date" name="departure"><br/>
 					Взрослые:
 					<input type="number" name="adult">
 
 					Дети:
-					<input type="number" name="child">
-					<button>Найти</button>
+					<input type="number" name="child"><br/>
+					<button class="search-btn">Найти</button>
 				</form>
 			</div> 
 			
 		</div>
 
 		<!-- FOOTER -->
-		<footer class="main-footer clearfix">
+		<footer class="main-footer ">
 			<!-- visitsedona -->
 			<div class="visit-sedona footer-item">
-				<a href="#">Visitsedona</a>
+				<a href="#">#Visitsedona</a>
 			</div>
 			<!-- social -->
 			<div class="social footer-item">
 				<ul>
-					<li><a href="#">tw</a></li>
-					<li><a href="#">fb</a></li>
-					<li><a href="#">youtube</a></li>
+					<li><a href="#" class="soc tw">tw</a></li>
+					<li><a href="#" class="soc fb">fb</a></li>
+					<li><a href="#" class="soc yt">youtube</a></li>
 				</ul>
 			</div>
 			<!-- HTML-Academy -->
 			<div class="academy footer-item">
-				<p>Visited by</p>
-				<a href="#"><img src="img/academy-logo.png" alt="HTML-Academy"></a>
+				<p>Website by</p>
+				<a href="#">HTML-Academy</a>
 			</div>
 		</footer>
 	</div>
