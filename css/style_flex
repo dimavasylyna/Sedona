@@ -1,0 +1,31 @@
+
+*, *:before, *:after {
+  /* Chrome 9-, Safari 5-, iOS 4.2-, Android 3-, Blackberry 7- */
+  -webkit-box-sizing: border-box; 
+
+  /* Firefox (desktop or Android) 28- */
+  -moz-box-sizing: border-box;
+
+  /* Firefox 29+, IE 8+, Chrome 10+, Safari 5.1+, Opera 9.5+, iOS 5+, Opera Mini Anything, Blackberry 10+, Android 4+ */
+  box-sizing: border-box;
+}
+
+html, 
+body {
+	min-width: 1200px;
+	min-height: 2762px;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	background-color: #000;
+}
+
+.container {
+	margin: 0 auto;
+	width: 1200px;
+	outline: 1px solid red;
+	background-color: green;
+}

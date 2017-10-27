@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Select</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+</head>
+<body>
+	<div class="container">
+	
+<!-- HEADER -->
+		<header class="main-header">
+			<!-- Menu -->
+			<nav class="menu">
+				<ul>
+					<li><a href="#">Информация</a></li>
+					<li><a href="#">Фото и видео</a></li>
+					<li><a href="#">Карта штата</a></li>
+					<li><a href="#">Гостинницы</a></li>
+				</ul>
+			</nav>
+			<!-- logo -->
+			<div>
+				<a href="#" class="logo">
+					<img src="img/logo.jpg" alt="">
+				</a>
+			</div>
+		</header>
+
+<!-- SELECT -->
+		<div class="select">
+			<div class="select-type">
+			<!-- infrastructura -->
+				<form>
+					<b> Инфраструктура:</b>
+					<input type="checkbox" name="pool">
+					Бассейн
+					<input type="checkbox" name="parking">
+					Парковка
+					<input type="checkbox" name="wi-fi">
+					Wi-Fi
+				</form>
+				<!-- House type -->
+				<form>
+					<b>Тип жилья:</b>
+					<input type="checkbox" name="hotel">
+					Гостинница
+					<input type="checkbox" name="motel">
+					Мотель
+					<input type="checkbox" name="apartment">
+					Апартаменты
+				</form>
+			</div>
+			<div class="select-price">
+				<form>
+				Стоимость в сутки:
+					<input type="range" name="">
+					<button>Показать</button>
+				</form>
+			</div>
+		</div>
+
+<!-- HOTELS -->
+		<div class="hotels">
+			<div class="sort">
+				<b>Найдено: 3</b>
+				<b>Сортировка:</b>
+				<ul>
+					<li>По цене</li>
+					<li>По типу</li>
+					<li>По рейтингу</li>
+				</ul>
+				<button class="up">up</button>
+				<button class="down">down</button>
+			</div>
+		</div>
+<!-- FOOTER -->
+		<footer class="main-footer">
+			<!-- visitsedona -->
+			<div class="visit-sedona">
+				<a href="#">Visitsedona</a>
+			</div>
+			<!-- social -->
+			<div class="social">
+				<ul>
+					<li><a href="#">tw</a></li>
+					<li><a href="#">fb</a></li>
+					<li><a href="#">youtube</a></li>
+				</ul>
+			</div>
+			<!-- HTML-Academy -->
+			<div class="academy">
+				<p>Visited by</p>
+				<a href="#"><img src="img/academy-logo.png" alt="HTML-Academy"></a>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

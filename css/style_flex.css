@@ -1,0 +1,502 @@
+*, 
+*::before, 
+*::after {
+	box-sizing: inherit;
+	
+}
+
+html {
+  	box-sizing: border-box;
+  	background-color: #f2f2f2;
+}
+
+body {
+	margin: 0;
+	font-family: "PT Sans", "Arial", sans-serif;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+
+.container {
+	margin: 0 auto;
+	width: 1200px;
+
+	box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+	
+
+
+header {
+	background-color: #fff;
+	position: relative;
+	padding: 17px 0;
+}
+
+.logo {
+	position: absolute;
+	top: 0px;
+	left: 531px;
+}
+
+
+.main-header {
+	
+	min-height: 56px;
+	
+}
+
+.menu > ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+
+
+.menu > ul li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 240px;
+	
+	text-align: center;
+	font-weight: bold;
+}
+
+.menu > ul li a {
+	text-decoration: none;
+	color: #000;
+	
+}
+
+.menu > ul li a:hover {
+	color: #81b3d2;
+}
+
+.menu > ul li a:active {
+	color: #669ec0;
+}
+
+.menu > ul li:nth-child(2) {
+	margin-right: 240px;
+}
+
+
+
+/*** INTRO ***/
+
+.intro {
+	height: 508px;
+	
+	padding: 76px 371px;
+
+
+
+
+	background: url(../pict/bg-border.png) no-repeat 0px 451px,
+	#3a739b url(../pict/bg-intro.jpg) no-repeat 0 -56px;
+
+}
+
+
+
+
+/**** CONTENT ***/
+
+.content {
+	position: relative;
+}
+
+.reasons-header {
+	
+	min-height: 216px;
+	padding: 58px 312px;
+	padding-top: 60px;
+	padding-bottom: 53px;
+	text-align: center;
+
+}
+
+.reasons-header h1 {
+	margin: 0 68px;
+	font-size: 21px;
+	line-height: 26px;
+
+}
+
+.reasons-header p {
+	margin: 30px 43px;
+	margin-bottom: 0;
+}
+
+/*** 1 ***/
+
+.reason-1 {
+	
+	display: flex;
+	min-height: 256px;
+
+	background-color: #81b3d2;
+	color: #fff;
+
+}
+
+.reason-title {
+	margin: 54px 60px;
+	margin-bottom: 48px;
+	order: -1;
+	width: 400px;
+	text-align: center;
+}
+
+.reason-title h2, .reason-title p {
+	margin: 0;
+	padding: 0;
+}
+
+.reason-title h2 {
+	margin-bottom: 24px;
+}
+
+.reason-title p {
+	margin-top: 21px;
+
+}
+
+/*** 2 ***/
+
+.reason-icon {
+	
+	display: flex;
+	min-height: 330px;
+	padding-top: 161px;
+	justify-content: space-between;
+	background-color: #fff;
+	color: #000;
+}
+
+.icon-item {
+	
+	position: relative;
+	text-align: center;
+	width: 400px;
+}
+
+
+.icon-item::before {
+	content: "";
+	background:  url(../pict/sprite-icon.png) no-repeat 50% 50%;
+	transform: translate(-37px);
+	background-position: -20px -0px;
+	width: 75px; 
+	height: 80px;
+	position: absolute;
+	top: -108px;
+}
+
+
+
+.reason-icon-home::before {
+	background-position: -20px 7px;
+
+}
+
+.reason-icon-food::before {
+	background-position: -20px -84px;
+	
+}
+
+.reason-icon-gift::before {
+	
+	background-position: -15px -179px;
+}
+
+.icon-item h2, .icon-item p {
+	margin: 0;
+}
+
+.icon-item h2 {
+	margin-bottom: 24px;
+}
+
+/*** 3 ***/
+
+.reason-2 {
+	
+	display: flex;
+	min-height: 254px;
+	flex-direction: row-reverse;
+
+	background-color: #81b3d2;
+	color: #fff;
+}
+
+.reason-title-2 {
+	margin: 54px 49px;
+	margin-top: 55px;
+	margin-bottom: 47px;
+}
+
+
+/*** 4 ***/
+
+
+.reason-list {
+	display: flex;
+	
+	justify-content: space-between;
+	min-height: 255px;
+
+	
+	color: #000;
+}
+
+.list-item {
+	
+	width: 400px;
+
+	text-align: center;
+	padding-top: 47px;
+}
+
+.list-item h2, .list-item p {
+	margin: 0;
+}
+
+.list-item h2 {
+	margin-bottom: 24px;
+}
+
+.list-item p {
+	margin-top: 21px;
+
+}
+
+/*** SEARCH ***/
+
+.search {
+	min-height: 292px;
+	padding: 58px 312px;
+
+	text-align: center;
+	background-color: #fff;
+	color: #000;
+}
+
+.search h2, .search p {
+	margin: 0;
+}
+
+.search h2 {
+	font-size: 30px;
+	margin-bottom: 32px;
+}
+
+.search p {
+	line-height: 24px;
+}
+
+/*** SEARCH-FORM ***/
+
+.search-form {
+	
+	position: absolute;
+	z-index: 5;
+	top: 1519px;
+	left: 316px;
+	display: block;
+	width: 568px;
+	height: 481px;
+
+	background-color: #fff;
+	color: #000;
+	
+}
+
+.search-form h2 {
+	background-color: #766357;
+	color: #fff;
+	margin: 0;
+	padding-top: 32px;
+	padding-bottom: 33px;
+	padding-left: 139px;
+	padding-right: 137px;
+	font-size: 21px;
+
+}
+
+.search-form form {
+	padding: 55px;
+	
+	padding-bottom: 45px;
+	padding-right: 52px;
+	font-weight: bold;
+}
+
+.search-form input {
+	font: inherit;
+	text-decoration: inherit;
+	color: inherit;
+
+	height: 38px;
+	width: 346px;
+	margin-bottom: 29px;
+	margin-left: 17px;
+
+	background-color: #f2f2f2;
+	border: none;
+}
+.search-form input[type="number"] {
+	width: 114px;
+	
+
+}
+.search-form input[name="adult"] {
+	margin-right: 50px ;
+	margin-left: 36px;
+}
+
+.search-form input[name="child"] {
+	margin-left: 23px;
+}
+
+
+
+
+
+.search-btn {
+	width: 458px;
+	height: 58px;
+	background-color: #81b3d2;
+	color: #fff;
+	font-size: 21px;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 26px;
+	margin-top: 25px;
+	border: none;
+}
+
+
+/**** FOOTER****/
+
+.main-footer {
+	display: flex;
+	padding: 36px 0px;
+
+	background-color: #fff;
+
+	position: absolute;
+	z-index: 3;
+	top: 2642px;
+	opacity: 0.9;
+}
+
+.footer-item {
+	width: 400px;
+	
+}
+
+.visit-sedona {
+	padding-top: 10px;
+	padding-left: 132px;
+}
+
+.visit-sedona a {
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.visit-sedona a:hover {
+	color: #81b3d2;
+}
+
+.visit-sedona a:active {
+	color: #669ec0;
+}
+
+.social {
+	padding: 0 124px;
+}
+.social ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.soc {
+	display: block;
+	font-size: 0;
+	width: 46px;
+	height: 48px;
+	background: #81b3d2 url(../pict/sprite-social.png) no-repeat;
+	margin-right: 6px;
+
+}
+
+.soc:hover {
+	background-color: #669ec0;
+}
+
+.soc:active {
+	background: #5496bd url(../pict/sprite-social-o.png) no-repeat;
+	
+}
+
+.tw, .tw:active { 
+	background-position: -5px -19px;
+	 }
+
+
+
+.fb, .fb:active { 
+	background-position: -2px -58px;
+	  }
+
+.yt, .yt:active { 
+	background-position: -7px 16px; 
+	 }
+
+.academy {
+	position: relative;
+	padding: 0 102px;
+	padding-top: 13px;
+}
+
+
+.academy p {
+	margin: 0;
+}
+
+.academy a{
+	position: absolute;
+	top: 5px;
+	right: 103px;
+	font-size: 0;
+}
+
+.academy a::before {
+	content: "";
+	display: block;
+	width: 113px;
+	height: 39px;
+	background:  url(../img/academy-logo.png) no-repeat ;
+}
+
+.academy a:hover::before {
+	background:  url(../img/academy-logo-hover.png) no-repeat ;
+}
+
+.academy a:active::before {
+	background:  url(../img/academy-logo-active.png) no-repeat ;
+}
